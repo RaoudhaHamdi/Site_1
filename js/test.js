@@ -51,16 +51,21 @@ $(".color1" ).click(function(){
 
     
     
-    $(document).on('click', '.nav navbar-nav navbar-right li a', function(event) {
-       var headerHeight= $('header').outerHeight();
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top -headerHeight )
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });s
     
         
         
     
 });
+
+ // jQuery for page scrolling feature - requires jQuery Easing plugin
+ $(document).on('click', 'a.page-scroll', function(event) {
+	var $anchor = $(this);
+	$('html, body').stop().animate({
+		scrollTop: ($($anchor.attr('href')).offset().top - 50)
+	}, 1250, 'easeInOutExpo');
+	
+	event.preventDefault();
+});
+
+
+
