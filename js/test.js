@@ -25,7 +25,7 @@ $('.sett').click(function () {
 //end
 
 
- // switcher Colors   
+ /* switcher Colors   
 $(".color1" ).click(function(){
    
 		$("#demo-wrapper ul li" ).attr("href", "css/Default-theme.css");
@@ -49,23 +49,26 @@ $(".color1" ).click(function(){
 		return false;
 	});
 
+  */  
     
-    
-    
-        
-        
-    
-});
+ 
 
  // jQuery for page scrolling feature - requires jQuery Easing plugin
- $(document).on('click', 'a.page-scroll', function(event) {
+ $(document).on('click', ' a.page-scroll ', 
+    function(event) 
+    {
 	var $anchor = $(this);
 	$('html, body').stop().animate({
 		scrollTop: ($($anchor.attr('href')).offset().top - 50)
-	}, 1250, 'easeInOutExpo');
+	}, 1200, 'easeInOutExpo');
 	
 	event.preventDefault();
+    });
+
+
+    $('.carousel').carousel(
+   {    interval: 3000,
+  pause: false
+   });
+
 });
-
-
-

@@ -10,18 +10,7 @@ ul.nav navbar-nav navbar-right.active>a
  background-color: #E41B17;   
 }
     
-.dropdown-menu
-    {
-       
-        border-top:3px solid #E41B17;
-    }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus
-    {
-       
-        background-color: #E41B17;
-}
 
 .carousel-indicators li
 {
@@ -52,12 +41,6 @@ ul.nav navbar-nav navbar-right.active>a
 {
     border:4px solid #E41B17;
     
-}
-
-
-hr
-{
-    border-color:#E41B17;
 }
 
 
